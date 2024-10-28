@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.educandoweb.course.OrderService;
 import com.educandoweb.course.entities.Order;
+import com.educandoweb.course.services.OrderService;
 
 // this anotation indicates that this class is controlled by a rest controller
 @RestController

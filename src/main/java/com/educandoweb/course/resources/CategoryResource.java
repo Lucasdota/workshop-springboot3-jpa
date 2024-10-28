@@ -9,23 +9,23 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.educandoweb.course.entities.User;
-import com.educandoweb.course.services.UserService;
+import com.educandoweb.course.entities.Category;
+import com.educandoweb.course.services.CategoryService;
 
 // this anotation indicates that this class is controlled by a rest controller
 @RestController
 // name of this recourse
-@RequestMapping(value = "/users")
-public class UserResource {
+@RequestMapping(value = "/categories")
+public class CategoryResource {
 	
 	@Autowired
-	private UserService service;
+	private CategoryService service;
 	
-	// endpoint method to access users
+	// endpoint method to access Categorys
 	// indicates that this method answers the get req from the http
 	@GetMapping
-	public ResponseEntity<List<User>> findall() {
-		List<User> list = service.findAll();
+	public ResponseEntity<List<Category>> findall() {
+		List<Category> list = service.findAll();
 		// ok() returns success response
 		// body() returns the obj u in the body of the response
 		return ResponseEntity.ok().body(list);
@@ -33,8 +33,8 @@ public class UserResource {
 	
 	@GetMapping(value = "/{id}")
 	// the PathVariable annotation tells spring that the id comes from the url
-	public ResponseEntity<User> findById(@PathVariable Long id) {
-		User obj = service.findById(id);
+	public ResponseEntity<Category> findById(@PathVariable Long id) {
+		Category obj = service.findById(id);
 		return ResponseEntity.ok().body(obj);
 	}
 	
