@@ -7,7 +7,7 @@ Esta aplicação backend foi desenvolvida como projeto de conclusão do curso Ja
 O projeto tem como objetivo consolidar conhecimentos de desenvolvimento backend com foco em Java e na arquitetura orientada a objetos. Ele contempla a implementação de uma aplicação estruturada em camadas lógicas, com operações de manipulação de dados e tratamento de exceções.
 
 # Funcionalidades
-- **Modelagem de usuários**: Estruturação de entidades para usuários, incluindo atributos como id, nome, telefone, email e senha.
+- **Modelagem de usuários**: Estruturação de entidades para usuários, incluindo atributos como id, nome, email, telefone e senha.
 - **Operações CRUD**: Implementação das operações de Create, Retrieve, Update e Delete para gerenciar registros no banco de dados.
 - **Tratamento de exceções**: Mecanismos de captura e resposta para exceções comuns, garantindo maior robustez e usabilidade da aplicação.
 
